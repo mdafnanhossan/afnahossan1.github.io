@@ -1,85 +1,49 @@
 <!doctype html>
-<html lang="en">
+<html lang="bn">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>MD Afnan Hossan — Portfolio</title>
-  <meta name="description" content="Portfolio of MD Afnan Hossan — web developer." />
-  <link rel="icon" href="favicon.png" />
-  <link rel="stylesheet" href="style.css">
+  <title>Md Afnan Hossan — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
+  <header class="hero">
     <div class="container">
-      <a class="brand" href="#">MD Afnan Hossan</a>
-      <nav class="nav">
-        <a href="#about">About</a>
+      <h1>Md Afnan Hossan</h1>
+      <p class="lead">Frontend Developer • Portfolio Demo</p>
+      <nav class="links">
         <a href="#projects">Projects</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
-        <a class="btn" href="#contact">Hire me</a>
       </nav>
-      <button class="nav-toggle" aria-label="toggle menu">☰</button>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <h1>Hi — I'm <span>MD Afnan</span>, a Web Developer.</h1>
-          <p>Building modern, fast and accessible websites and web apps. I work with JavaScript, Cloudflare Workers, D1, and static sites.</p>
-          <p><a class="btn" href="#projects">See my work</a></p>
-        </div>
-        <div class="hero-photo" aria-hidden="true">
-          <!-- placeholder circle -->
-          <div class="photo-placeholder">AF</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section container">
-      <h2>About</h2>
-      <p>I specialize in building fast and maintainable web experiences — from small marketing sites to full-stack worker APIs and D1 integrations. Available for freelance and remote roles.</p>
-      <ul class="skills">
-        <li>HTML & CSS</li>
-        <li>JavaScript / Node</li>
-        <li>Cloudflare Workers & D1</li>
-        <li>Responsive Design</li>
+  <main class="container">
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul class="cards">
+        <li class="card">
+          <h3>Sample Project</h3>
+          <p>This is a demo project. API: <code>/api/projects</code></p>
+          <a class="btn" href="https://afnan-portfolio-api.mdafnanhossan1.workers.dev/api/projects">View API</a>
+        </li>
       </ul>
     </section>
 
-    <section id="projects" class="section container">
-      <h2>Projects</h2>
-      <div class="grid" id="projects-list">
-        <!-- Projects will be loaded by script.js from the API if available -->
-        <article class="card">
-          <h3>Sample Project</h3>
-          <p>This is a demo project. Replace with your own projects.</p>
-          <a class="link" href="#" target="_blank" rel="noreferrer">View</a>
-        </article>
-      </div>
-      <p class="muted">Tip: to list live projects from your Worker API, ensure your worker URL is configured in <code>script.js</code>.</p>
+    <section id="about">
+      <h2>About</h2>
+      <p>Hi — I'm Afnan. This is a simple portfolio demo for GitHub Pages.</p>
     </section>
 
-    <section id="contact" class="section container contact-section">
+    <section id="contact">
       <h2>Contact</h2>
-      <p>Send me a message — it will save to your API (if configured).</p>
-      <form id="contact-form">
-        <div class="field"><input name="name" placeholder="Your name" required></div>
-        <div class="field"><input name="email" placeholder="Email" type="email" required></div>
-        <div class="field"><textarea name="message" placeholder="Message" rows="5" required></textarea></div>
-        <div class="field"><button class="btn" type="submit">Send message</button></div>
-        <p id="form-status" class="muted"></p>
-      </form>
+      <p>Email: <a href="mailto:mdafnanhossan1@example.com">mdafnanhossan1@example.com</a></p>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <small>© <span id="year"></span> MD Afnan Hossan — Built with ❤️</small>
-    </div>
+  <footer class="footer">
+    <div class="container">© 2025 Md Afnan Hossan</div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
